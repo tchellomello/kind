@@ -8,7 +8,7 @@ echo $STATIC_IP > /var/kube-config/static-ip
 echo "Building against kubernetes $KUBERNETES_VERSION"
 
 # start docker daemon, useful to check how it starts, we want it to be using overlay2 and not show errors etc.
-docker info
+#docker info
 
 # add deps
 apk add --update sudo curl ca-certificates bash less findutils supervisor tzdata socat lz4 conntrack-tools sed
